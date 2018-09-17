@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ListMemberScreen } from 'containers';
 
-class HelloBtn extends React.Component {
+class HomeContainer extends React.Component {
 
 	constructor(props) {
     super(props);
@@ -13,11 +14,11 @@ class HelloBtn extends React.Component {
   render() {
     return (
       <div>
-        Hello world
+        <ListMemberScreen />
     	</div>
     );
   }
 }
 
 const domContainer = document.querySelector('#root_element_for_react');
-ReactDOM.render(<HelloBtn />, domContainer);
+ReactDOM.render(<HomeContainer />, domContainer);
